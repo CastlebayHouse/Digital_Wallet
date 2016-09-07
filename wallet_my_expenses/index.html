@@ -49,7 +49,7 @@
             <h3>Current balance:</h3>
           </div>
           <div class="wallet-title-right">
-            <div class="balance">${{getBalanceDollars()}}<sup>{{getBalanceCents()}}</sup></div>
+            <div class="balance" ng-cloak>${{getBalanceDollars()}}<sup>{{getBalanceCents()}}</sup></div>
           </div>
         </div>
         <!-- end wallet-title -->
@@ -59,10 +59,10 @@
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
             </div>
             <div class="transaction-details">
-              <h5>{{transaction.title}}</h5>
-              <p>{{transaction.desc}}</p>
+              <h5 ng-cloak>{{transaction.title}}</h5>
+              <p ng-cloak>{{transaction.desc}}</p>
             </div>
-            <div class="transaction-dollar-amount ng-class:transaction.creditType"><h5>${{transaction.dollars}}.<sup>{{transaction.cents}}</sup></h5></div>
+            <div class="transaction-dollar-amount ng-class:transaction.creditType" ng-cloak><h5>${{transaction.dollars}}.<sup>{{transaction.cents}}</sup></h5></div>
           </div>
           <!-- end transaction -->
         </div>

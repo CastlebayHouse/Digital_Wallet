@@ -32,8 +32,8 @@ var transactions = [
     title: "Funds added",
     desc: "Payment #343212 - 11 July, 2015",
     date: "11 July 2015",
-    dollars: "650",
-    cents: "19",
+    dollars: "900",
+    cents: "00",
     creditType: "credit"
   },
   { cardId : 0,
@@ -62,8 +62,8 @@ var transactions = [
   { cardId : 2,
     title: "Regal Cinemas",
     desc: "Entertainment #411412 - 08 July, 2015",
-    dollars: "650",
-    cents: "19",
+    dollars: "19",
+    cents: "29",
     creditType: "debit"
   },
   { cardId : 2,
