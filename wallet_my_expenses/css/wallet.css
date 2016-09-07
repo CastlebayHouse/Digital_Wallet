@@ -1,0 +1,257 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/*
+castlebayhouse.com
+wallet.css v1.0
+Last Update: 09/05/2016
+Author: Chris C.
+*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffcc66;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h3 {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+h4 {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+div.container {
+  padding: 20px;
+}
+
+div.wallet {
+    position: relative;
+    margin: 0 auto;
+    width: 695px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 12px #f68500;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+div.cards {
+  background-color: #f2f2f2;
+  padding: 40px;
+  float: left;
+  width: 41%;
+  max-height: 550px;
+}
+
+div.transactions {
+  background-color: #ffffff;
+  padding: 40px;
+  float: right;
+  width: 59%;
+  height: 555px;
+}
+
+ul {
+  list-style-type: disc;
+  -webkit-padding-start: 20px;
+}
+
+div.wallet-title {
+  overflow: hidden;
+  padding-bottom: 40px;
+  height: 70px;
+}
+
+div.wallet-title-left {
+  float: left;
+  color: #888;
+}
+
+div.wallet-title-right {
+  float: right;
+  color: #ccc;
+  font-size: 20px;
+}
+
+div.wallet-title-right a:hover {
+  color: #aaa;
+}
+
+div.wallet-title-right a:active {
+  color: rgb(120,120,200);
+}
+
+div.wallet-title.bottom-border {
+  border-bottom: 2px solid #eee;
+}
+
+div.balance {
+  color: #111;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+div.balance sup {
+  font-size: 14px;
+}
+
+div.card-list {
+  clear: both;
+}
+
+div.card-list > div:last-child {
+  margin-bottom: 0px;
+}
+
+div.card-list > a > div {
+  border: 2px solid rgb(220,220,220);
+  border-radius: 5px;
+}
+
+div.card-list > a:hover > div{
+  border: 2px solid #aaa;
+  box-shadow: 1px 1px 2px #bbb;
+}
+
+div.card-list > a:focus > div{
+  border: 2px solid rgb(120,120,200);
+  box-shadow: 1px 1px 2px #666;
+}
+
+div.transaction-list {
+  clear: both;
+}
+
+div.credit-card {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 12px;
+}
+
+div.credit-card-number {
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  letter-spacing: .125em;
+}
+
+div.credit-card-number sub {
+  font-size: 1.05em;
+  vertical-align: -6px;
+}
+
+div.credit-card-expiration-date {
+  font-size: 13px;
+  color: #aaa;
+}
+
+img {
+  display: block;
+}
+
+div.transaction {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+div.transaction-expand {
+  float: left;
+  width: 10%;
+  color: #888;
+}
+
+div.transaction-details {
+  float: left;
+  width: 60%;
+}
+
+div.transaction-details h5 {
+  margin-bottom: 0.5em;
+}
+
+div.transaction-details p {
+  color: #aaa;
+  font-size: 12px;
+}
+
+div.transaction-dollar-amount {
+  float: right;
+  color: rgba(0,0,255,.5);
+  width: 30%;
+  text-align: right;
+  padding-top: 9px;
+}
+
+div.transaction-dollar-amount sup{
+  font-size: 9px;
+  vertical-align: 4px;
+}
+
+div[class~="credit"] {
+  color: rgba(0,150,0,.7);
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html ng-app="main">
+<head>
+  <link rel="stylesheet" href="css/wallet.css">
+  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wallet" ng-controller="mainCtrl">
+      <div class="cards">
+        <div class="wallet-title">
+          <div class="wallet-title-left">
+            <h3>My Wallets</h3>
+          </div>
+          <div class="wallet-title-right">
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <!-- end wallet-title -->
+        <div class="card-list">
+          <a href="#" ng-click="setActiveCard(0)">
+            <div id="card1" class="credit-card">
+              <img src="./images/visa.jpg"></img>
+              <div class="credit-card-number"><sub>**** **** **** </sub>2562</div>
+              <div class="credit-card-expiration-date">Valid Thru: 12/17</div>
+            </div>
+          </a>
+          <a href="#" ng-click="setActiveCard(1)">
+            <div id="card2" class="credit-card">
+              <img src="./images/amex.jpg"></img>
+              <div class="credit-card-number"><sub>**** ******* </sub>21001</div>
+              <div class="credit-card-expiration-date">Valid Thru: 07/19</div>
+            </div>
+          </a>
+          <a href="#" ng-click="setActiveCard(2)">
+            <div id="card3" class="credit-card">
+              <img src="./images/mastercard.jpg"></img>
+              <div class="credit-card-number"><sub>**** **** **** </sub>8335</div>
+              <div class="credit-card-expiration-date">Valid Thru: 09/17</div>
+            </div>
+          </a>
+        </div>
+        <!-- end card-list -->
+      </div>
+      <!-- end wallet -->
+      <div class="transactions">
+        <div class="wallet-title bottom-border">
+          <div class="wallet-title-left">
+            <h3>Current balance:</h3>
+          </div>
+          <div class="wallet-title-right">
+            <div class="balance">${{getBalanceDollars()}}<sup>{{getBalanceCents()}}</sup></div>
+          </div>
+        </div>
+        <!-- end wallet-title -->
+        <div class="transaction-list">
+          <div class="transaction" ng-repeat="transaction in transactions | filter: {cardId:activeCard} : true">
+            <div class="transaction-expand">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+            <div class="transaction-details">
+              <h5>{{transaction.title}}</h5>
+              <p>{{transaction.desc}}</p>
+            </div>
+            <div class="transaction-dollar-amount ng-class:transaction.creditType"><h5>${{transaction.dollars}}.<sup>{{transaction.cents}}</sup></h5></div>
+          </div>
+          <!-- end transaction -->
+        </div>
+      </div>
+      <!-- end transactions -->
+    </div>
+    <!-- end wallet -->
+  </div>
+  <!-- end container -->
+  <script type="text/javascript" src="./script/transactions.js"></script>
+  <script type="text/javascript" src="./lib/angular-1.5.8/angular.min.js"></script>
+  <script type="text/javascript" src="./script/app.js"></script>
+</body>
+</html>
